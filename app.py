@@ -9,8 +9,10 @@ def main():
         page_icon="📚",
     )
 
+
     api_key = st.secrets["OPENAI_API_KEY"]
     assistant_id = st.secrets["ASSISTANT_ID"]
+
 
     # Initiate st.session_state
     st.session_state.client = OpenAI(api_key=api_key)
